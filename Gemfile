@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'simple_form'
 gem 'kaminari'
 gem 'ransack'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
