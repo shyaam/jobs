@@ -1,14 +1,8 @@
-<div class="nav"><h1>LOGO: Who are Hiring?</h1>
-    <%= render 'jobs/search' %>
-    <%= render 'jobs/add_job' %>
-</div>
-	<div class="container">
-<h2>watch out, these companies are hiring now</h2>
-	<p>
-		<% @jobs.each do |job| %>
-		<div class="job">
-		  <%= job.company %> is hiring a <%= link_to job.title, job.url %> for <%= job.location %>
-		</div>
-		<% end %>
-	</p>
+<h2>Watch out, these companies are hiring now</h2>
+<p>
+	<% @jobs.each do |job| %>
+	<div class="job">
+	  <%= job.company %> is hiring a <%= link_to job.title, job.url %> for <%= job.location %>
 	</div>
+	<% end %>
+</p>
