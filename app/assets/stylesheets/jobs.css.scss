@@ -1,7 +1,8 @@
+@import "font-awesome";
 body {
   background: #a71b3e;
   color: white;
-  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  font: 18px/1.5 Helvetica, Arial, sans-serif;
   margin: auto;
   width: auto;
 }
@@ -9,6 +10,6 @@ a {
   color: #efaaca;
   text-decoration: none;
 }
-navbar p {
-color: white;
+nav .post {
+  text-decoration: underline;
 }
