@@ -1,0 +1,10 @@
+<h1>Editing post</h1>
+<%= simple_form_for @job do |form| %>
+  <%= form.input :company, label: "Your company" %>
+  <%= form.input :title, label: "Job title" %>
+  <%= form.input :url, label: "Link to job" %>
+  <%= form.input :location, label: "Location of the job" %>
+  <%= form.button :submit %>
+<% end %>
+<%= link_to 'Show', @job %> |
+<%= link_to 'Back', jobs_path %>

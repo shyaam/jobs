@@ -1,0 +1,8 @@
+<%= search_form_for @search do |f| %>
+    <div class = "field">
+    <%= f.label :title_cont, "Title contains" %>
+    <%= f.text_field :title_cont %></div>
+    <div class="actions">
+    <%= f.submit "Search" %>
+    </div>
+<% end %>
