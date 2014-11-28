@@ -1,10 +1,10 @@
-<h1>Editing post</h1>
 <%= simple_form_for @job do |form| %>
-  <%= form.input :company, label: "Your company" %>
-  <%= form.input :title, label: "Job title" %>
-  <%= form.input :url, label: "Link to job" %>
-  <%= form.input :location, label: "Location of the job" %>
-  <%= form.button :submit %>
+<h1 class="text-center">EDITING POST</h1>
+  <%= form.input :company, label: "company", input_html: {class: 'form-control'} %>
+  <%= form.input :title, label: "job title", input_html: {class: 'form-control'} %>
+  <%= form.input :url, label: "link to job", input_html: {class: 'form-control'} %>
+  <%= form.input :location, label: "location of the job", input_html: {class: 'form-control'} %>
+  <%= form.button :submit, "UPDATE JOB", class: "btn btn-custom btn-block" %>
 <% end %>
 <%= link_to 'Show', @job %> |
 <%= link_to 'Back', jobs_path %>

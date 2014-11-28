@@ -1,15 +1,43 @@
-@import "font-awesome";
 body {
-  background: #a71b3e;
-  color: white;
+  background: #60A8C0;
+  color: #FFFFFF;
   font: 18px/1.5 Helvetica, Arial, sans-serif;
   margin: auto;
   width: auto;
 }
+body .container {
+  padding: 70px 20px 30px 20px;
+}
 a {
-  color: #efaaca;
+  color: #1B325F;
   text-decoration: none;
 }
 nav .post {
   text-decoration: underline;
+}
+footer {
+  background: #1B325F;
+  color: #FFFFFF;
+  font: 14px/1.7 Helvetica, Arial, sans-serif;
+  margin: auto;
+  width: auto;
+}
+footer .container {
+  padding: 20px 20px 79px 20px;
+}
+.btn-custom {
+  background: #1B325F;
+}
+.btn-custom:hover {
+  background: #1B325F;
+  color:#60A8C0;
+}
+footer a, a:focus {
+  color: #60A8C0;
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+footer .alert {
+  color: alert;  
 }
