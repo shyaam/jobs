@@ -1,8 +1,11 @@
-<h2>Watch out, these companies are hiring now</h2>
+<h2>hiring now</h2>
 <p>
+	add month
 	<% @jobs.each do |job| %>
 	<div class="job">
-	  <%= job.company %> is hiring a <%= link_to job.title, job.url %> for <%= job.location %>
+	  <%= job.company %><div class="pull-right"><%= link_to job.title, job.url %></div></br>
+		<i class='fa fa-map-marker'></i> <%= job.location %> &middot; <%= job.created_at %>
+		<hr>
 	</div>
 	<% end %>
 </p>

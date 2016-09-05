@@ -3,7 +3,7 @@ class JobsController < ApplicationController
 
   def index
     @search = Job.search(params[:q])
-    @search.sorts = 'updated_at' if @search.sorts.empty?
+    @search.sorts = 'created_at' if @search.sorts.empty?
     @jobs = @search.result(distinct: true).page(params[:page]).per(25).to_a.uniq
   end
 
@@ -23,7 +23,7 @@ class JobsController < ApplicationController
       render ('new')
     end
   end
-  
+
   def edit
     @job = Job.find(params[:id])
   end
