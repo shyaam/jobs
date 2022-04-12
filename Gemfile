@@ -45,6 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem "actionpack", ">= 5.2.4.6"
 gem "simple_form", ">= 5.0.0"
 gem 'kaminari'
 gem 'ransack'
