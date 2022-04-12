@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.7.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use SCSS for stylesheets
@@ -45,7 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'simple_form'
+gem "simple_form", ">= 5.0.0"
 gem 'kaminari'
 gem 'ransack'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
